@@ -1,8 +1,10 @@
 package minimax
 
-// https://www.minimaxi.com/document/guides/chat-model/V2?id=65e0736ab2845de20908e2dd
+// https://platform.minimax.io/docs/faq/models
 
 var ModelList = []string{
+	"MiniMax-M3.1-Flash",
+	"MiniMax-M3",
 	"abab6.5-chat",
 	"abab6.5s-chat",
 	"abab6-chat",
@@ -12,6 +14,10 @@ var ModelList = []string{
 	"MiniMax-M2.7-highspeed",
 	"speech-2.5-hd-preview",
 	"speech-2.5-turbo-preview",
+	"speech-2.8-hd",
+	"speech-2.8-turbo",
+	"speech-2.6-hd",
+	"speech-2.6-turbo",
 	"speech-02-hd",
 	"speech-02-turbo",
 	"speech-01-hd",
