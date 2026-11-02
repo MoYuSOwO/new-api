@@ -67,13 +67,16 @@ func requestOpenAI2Mistral(request *dto.GeneralOpenAIRequest) *dto.GeneralOpenAI
 		})
 	}
 	out := &dto.GeneralOpenAIRequest{
-		Model:       request.Model,
-		Stream:      request.Stream,
-		Messages:    messages,
-		Temperature: request.Temperature,
-		TopP:        request.TopP,
-		Tools:       request.Tools,
-		ToolChoice:  request.ToolChoice,
+		Model:            request.Model,
+		Stream:           request.Stream,
+		Messages:         messages,
+		Temperature:      request.Temperature,
+		TopP:             request.TopP,
+		Stop:             request.Stop,
+		ResponseFormat:   request.ResponseFormat,
+		ParallelTooCalls: request.ParallelTooCalls,
+		Tools:            request.Tools,
+		ToolChoice:       request.ToolChoice,
 	}
 	if request.MaxTokens != nil || request.MaxCompletionTokens != nil {
 		maxTokens := request.GetMaxTokens()
